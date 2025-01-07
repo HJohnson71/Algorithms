@@ -9,10 +9,11 @@ def quickSort(A):
     greater = [x for x in A if x > pivot]
     return quickSort(less) + equal + quickSort(greater)
 
-# The following should return [1, 1, 2, 2, 3, 4, 4]
+# Test:
+
 print(quickSort([1, 2, 4, 1, 2, 4, 3]))
 
-#Median of two sorted arrays using Divide and Conquer Method: O(logn)
+# Median of two sorted arrays using Divide and Conquer Method: O(logn)
 
 def median(X, Y):
     n = len(X)
@@ -49,6 +50,8 @@ def median(X, Y):
             X = X[0:((n//2)+1)]
             Y = Y[((n//2)+1):n]
             return median(X,Y)
+# Test:
+
 print(median([1], [2])) # return 1.5
 print(median([1, 2], [3, 4])) # returns 2.5
 print(median([2, 3], [1, 4])) # returns 2.5
@@ -130,6 +133,8 @@ def median2(X,Y):
             else:
                 part1 = parta + 1
         return 0
+Test:
+
 print(median2([1], [2, 3])) # return 2.0
 print(median2([1, 3], [2])) # return 2.0
 print(median2([1,2,3,4], [3,4])) # returns 3.0
