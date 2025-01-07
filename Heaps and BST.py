@@ -45,7 +45,7 @@ print(k_largest([[2], [1]], 2))# returns 1
 print(k_largest([[2, 3, 3, 4], [1, 5], [1, 2, 4]], 4)) # returns 3
 print(k_largest([[10, 100], [1, 1, 1], [1, 1000]], 7)) # returns 1
 
-#Kth largest element of Binary Search Tree: O(log^2(n))
+# Kth largest element of Binary Search Tree: O(log^2(n))
 
 class Node:
     def __init__(self, key: int):
